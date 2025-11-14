@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Pokémon Keyboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Arvo|Roboto+Mono"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="gradient-bg"></div>
+    
+    <div class="container">
+      <h1 id="title">🎮 Pokémon Keyboard</h1>
+      <p class="subtitle">Click Pokémon to hear their cries!</p>
+
+      <div style="margin:12px 0">
+        <button id="enable-audio" class="enable-audio">Enable Audio</button>
+        <small style="color:#9ee7de; margin-left:12px">(Click to unlock sounds)</small>
+      </div>
+
+      <!-- Keyboard Layout -->
+      <div class="keyboard">
+        <!-- Row 1 -->
+        <div class="key-row">
+          <button class="key q" data-key="q" data-pokemon="pikachu"></button>
+          <button class="key w" data-key="w" data-pokemon="charizard"></button>
+          <button class="key e" data-key="e" data-pokemon="blastoise"></button>
+          <button class="key r" data-key="r" data-pokemon="venusaur"></button>
+          <button class="key t" data-key="t" data-pokemon="gyarados"></button>
+          <button class="key y" data-key="y" data-pokemon="dragonite"></button>
+          <button class="key u" data-key="u" data-pokemon="articuno"></button>
+          <button class="key i" data-key="i" data-pokemon="zapdos"></button>
+          <button class="key o" data-key="o" data-pokemon="moltres"></button>
+          <button class="key p" data-key="p" data-pokemon="mewtwo"></button>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="key-row">
+          <button class="key a" data-key="a" data-pokemon="bulbasaur"></button>
+          <button class="key s" data-key="s" data-pokemon="squirtle"></button>
+          <button class="key d" data-key="d" data-pokemon="charmander"></button>
+          <button class="key f" data-key="f" data-pokemon="psyduck"></button>
+          <button class="key g" data-key="g" data-pokemon="golduck"></button>
+          <button class="key h" data-key="h" data-pokemon="mankey"></button>
+          <button class="key j" data-key="j" data-pokemon="primeape"></button>
+          <button class="key k" data-key="k" data-pokemon="growlithe"></button>
+          <button class="key l" data-key="l" data-pokemon="arcanine"></button>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="key-row">
+          <button class="key z" data-key="z" data-pokemon="lapras"></button>
+          <button class="key x" data-key="x" data-pokemon="shellder"></button>
+          <button class="key c" data-key="c" data-pokemon="cloyster"></button>
+          <button class="key v" data-key="v" data-pokemon="slowbro"></button>
+          <button class="key b" data-key="b" data-pokemon="seel"></button>
+          <button class="key n" data-key="n" data-pokemon="dewgong"></button>
+          <button class="key m" data-key="m" data-pokemon="snorlax"></button>
+        </div>
+      </div>
+
+      <footer>🎵 Click a Pokémon to hear its cry! ✨</footer>
+    </div>
+
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
